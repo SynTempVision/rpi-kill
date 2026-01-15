@@ -35,13 +35,15 @@ COM --X-- NC  --> Pi loses power
 6. monitor pi health
 
 #### Test Result Interpretation
-####### PASS
+
+###### PASS
 - System boots
 - Root filesystem mounted RW
 - RTSP services running
 - Database running
 - No critical storage failures
-- DEGRADED
+
+###### DEGRADED
 - USB or storage warnings
 - systemd in degraded state
 - Services recover automatically
