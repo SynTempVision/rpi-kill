@@ -3,7 +3,7 @@ import requests
 import csv
 from datetime import datetime
 
-RELAY_IP = "192.168.1.50"
+RELAY_IP = "172.17.17.105"
 CHANNEL  = 3
 LOG_FILE = "relay_power_cycles.csv"
 
