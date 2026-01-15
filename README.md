@@ -33,3 +33,23 @@ COM --X-- NC  --> Pi loses power
 4. put in system_init.sh
 5. on laptop start the relay_controller
 6. monitor pi health
+
+#### Test Result Interpretation
+####### PASS
+- System boots
+- Root filesystem mounted RW
+- RTSP services running
+- Database running
+- No critical storage failures
+- DEGRADED
+- USB or storage warnings
+- systemd in degraded state
+- Services recover automatically
+
+###### FAIL
+- Root filesystem mounted RO
+- Storage device missing or unstable
+- RTSP services fail to start
+- Database fails to start
+- Manual intervention required
+- Testing stops on FAIL.
