@@ -28,3 +28,8 @@ COM -- NC  --> Pi has power
 Relay ON   (energized):
 COM --X-- NC  --> Pi loses power
 ```
+1. put kill_power_test.sh in /usr/local/bin/camera
+2. sudo chmod +x /usr/local/bin/camera_powercut_test.sh
+3. put in system_init.sh
+4. on laptop start the relay_controller
+5. monitor pi health
