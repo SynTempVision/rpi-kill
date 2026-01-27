@@ -16,15 +16,16 @@ Testing the amount of unsafe shutdowns and recording its affects on the camera -
 [ AC / DC Power ]
         │
 [ ING10-082GSMP PoE Switch ]
-        │  (PoE ON / OFF)
+        │   (PoE ON / OFF)
         │
-   Ethernet Cable
+[ Anivision PoE Splitter ]
+        ├────────── Ethernet (Data)
+        │               │
+        │          [ Pi Ethernet ]
         │
-[ PoE HAT / DC-DC Converter ]
-        │
-[ Raspberry Pi ]
-        │
-[ Camera / Storage / Services ]
+        └────────── DC Output (5V)
+                        │
+                 [ Raspberry Pi HAT ]
 
 ```
 1. Enable PoE on target port
