@@ -58,3 +58,20 @@ Testing the amount of unsafe shutdowns and recording its affects on the camera -
 - Database fails to start
 - Manual intervention required
 - Testing stops on FAIL.
+
+
+### NOTES
+
+- diable bluetooth 
+```
+sudo systemctl disable hciuart.service
+sudo systemctl stop hciuart.service
+sudo systemctl reset-failed
+sudo reboot
+Removed /etc/systemd/system/dev-serial1.device.wants/hciuart.service.
+```
+
+- enable bluetooth
+```
+sudo systemctl enable hciuart.service
+```
