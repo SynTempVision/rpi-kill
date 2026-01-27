@@ -1,0 +1,19 @@
+[Unit]
+Description=Power Integrity Boot Logger
+After=multi-user.target
+DefaultDependencies=no
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/power_integrity.sh
+
+[Install]
+WantedBy=multi-user.target
+
+
+
+```
+chmod +x /usr/local/bin/power_integrity.sh
+systemctl daemon-reload
+systemctl enable power_integrity.service
+```
